@@ -2,6 +2,7 @@
     package="com.etiennelawlor.imagegallery">
 
     <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
 
     <application
         android:allowBackup="true"
@@ -11,6 +12,11 @@
 
         <activity
             android:name="com.etiennelawlor.imagegallery.library.activities.ImageGalleryActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label=""
+            android:theme="@style/ImageGalleryTheme" />
+        <activity
+            android:name="com.etiennelawlor.imagegallery.library.activities.ImagePagerGalleryActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:label=""
             android:theme="@style/ImageGalleryTheme" />

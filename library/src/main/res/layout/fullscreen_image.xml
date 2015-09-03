@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
+    android:id="@+id/ll"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@android:color/black"
-    android:id="@+id/ll">
+    android:orientation="vertical">
 
     <com.etiennelawlor.imagegallery.library.view.TouchImageView
         android:id="@+id/iv"
@@ -12,6 +13,6 @@
         android:layout_marginTop="?actionBarSize"
         android:adjustViewBounds="true"
         android:scaleType="fitCenter"
-        android:visibility="visible"/>
+        android:visibility="visible" />
 
 </LinearLayout>
